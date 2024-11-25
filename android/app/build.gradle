@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.1'
+    }
+}
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    namespace = "com.yonemaget.yonema_get"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.yonemaget.yonema_get"
+        minSdk = flutter.minSdkVersion
+        minSdkVersion 21  
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.7.4')
+}
+
+flutter {
+    source = "../.."
+}

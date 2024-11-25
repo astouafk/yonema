@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "819142302307",
+    "firebase_url": "https://yonemaget-default-rtdb.firebaseio.com",
+    "project_id": "yonemaget",
+    "storage_bucket": "yonemaget.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819142302307:android:8604fdb8f03ac176f33656",
+        "android_client_info": {
+          "package_name": "com.yonemaget.yonema_get"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819142302307-nvvo19enajo4j0i7fq6se7jbpliq4too.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFDmKYPHgFRatVITq8sKKXAd5Hy-q954E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819142302307-nvvo19enajo4j0i7fq6se7jbpliq4too.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
